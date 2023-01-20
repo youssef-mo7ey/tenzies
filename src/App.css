@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&family=Karla:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Work+Sans:ital,wght@0,200;0,300;0,700;0,800;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #0B2434;
+    padding: 35px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container{
+
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 450px;
+    max-width: 500px;
+    border-radius:20px ;
+}
+.text-container{
+
+    text-align: center;
+    padding-top: 5px;
+}
+
+.text-container h1{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+}
+.instructions-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instructions{
+    margin: 0px;
+    width: 320px;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+.card-container{
+
+    display: grid;
+    grid-template: auto auto / repeat(5,1fr);
+    gap: 20px;
+    padding-inline: 45px;
+    padding-block: 20px;
+    
+}
+
+@media screen and (max-width:576px) {
+
+    .card-container{
+        grid-template: auto auto / repeat(3,1fr);
+    }
+    
+}
+.card{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+}
+
+.button-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -25px;
+}
+
+.button{
+
+    width: 130px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.button:hover{
+
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
+.button:active{
+
+    opacity: 0.7;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
